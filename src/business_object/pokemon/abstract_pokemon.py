@@ -36,20 +36,6 @@ class AbstractPokemon(ABC):
         Returns :
             float : the multiplier
         """
-        # if self._type == "Attacker":
-        #     multiplier = 1 + (self.speed_current + self.attack_current) / 200
-        # elif self._type == "Defender":
-        #     multiplier = 1 + (self.attack_current + self.defense_current) / 200
-        # elif self._type == "All rounder":
-        #     multiplier = 1 + (self.sp_atk_current + self.sp_def_current) / 200
-        # elif self._type == "Speedster":
-        #     multiplier = 1 + (self.speed_current + self.sp_atk_current) / 200
-        # elif self._type == "Supporter":
-        #     multiplier = 1 + (self.sp_atk_current + self.defense_current) / 200
-        # else:
-        #     raise Exception("type inconnu")
-
-        # return multiplier
 
     def level_up(self) -> None:
         """
