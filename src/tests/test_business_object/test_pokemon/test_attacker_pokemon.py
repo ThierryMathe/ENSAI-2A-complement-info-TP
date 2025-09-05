@@ -1,13 +1,12 @@
-from business_object.pokemon.defender_pokemon import DefenderPokemon
+from business_object.pokemon.attacker_pokemon import AttackerPokemon
 from business_object.statistic import Statistic
 
 
-class TestDefenderPokemon:
+class TestAttackerPokemon:
     def test_get_coef_damage_type(self):
         # GIVEN
-
-        s = Statistic(attack=100, defense=100)
-        snorlax = DefenderPokemon(stat_current=s)
+        s = Statistic(attack=100, speed=100)
+        snorlax = AttackerPokemon(stat_current=s)
 
         # WHEN
         multiplier = snorlax.get_pokemon_attack_coef()
